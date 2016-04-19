@@ -1,0 +1,50 @@
+$primaryColor: #0074D9;
+$fontStack: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  #{$property}: #{$value};
+}
+
+html {
+  font-family: $fontStack;
+  color: #FFFFFF;
+
+  body {
+    background: $primaryColor;
+    text-align: center;
+    width: 100%;
+
+    #buyline {
+      width: 60%;
+      padding-top: 10%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      margin: auto;
+
+      img {
+        width: 200px;
+        height: 200px;
+        @include prefix(border-radius, 150px, webkit moz o);
+        border: .5px black solid
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    }
+
+    #contact {
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px;
+      }
+    }
+  }
+}
