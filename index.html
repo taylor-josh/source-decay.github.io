@@ -1,24 +1,63 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html class="dark red" lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <title>Joshua Taylor (source-decay)</title>
-
+   <meta charset="utf-8">
+   <title></title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <section id="buyline">
-      <img src="img/1.jpeg" alt="joshua taylor">
-      <h1>Joshua Taylor</h1>
-      <p>A web developer and coffee lover who makes wonderful things for the Internet.</p>
-    </section>
-    <span id="contact">
-      <a href="mailto:jtaylor9110@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
-      <a href="https://github.com/source-decay"><i class="fa fa-github fa-2x"></i></a>
-      <a href="https://linkedin.com/in/joshrtaylor"><i class="fa fa-linkedin-square fa-2x"></i></a>
-    </span>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </div> <!--/#navbar collapse-->
+      </div>
+    </nav>
+    <div id="about">
+      <img class="center-block img-responsive" src="img/1.jpeg"></img>
+      <div id="contact">
+        <span id="social">
+          <a href="mailto:jtaylor9110@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+          <a href="https://github.com/source-decay"><i class="fa fa-github fa-3x"></i></a>
+          <a href="https://linkedin.com/in/joshrtaylor"><i class="fa fa-linkedin-square fa-3x"></i></a>
+        </span>
+      </div>
+      <div id="terminal-wrapper">
+        <div class="terminal-content">
+          <span id="user">guest@portfolio:~$</span>
+          <span>cat joshtaylor.txt</span>
+          <p>My name is <span class="standout">Josh Taylor</span> and I am a web developer located near
+          <span class="standout"> Pittsburgh, PA</span> with a passion for UX and a snazzy UI. I know how to build
+          awesome stuff using <span class="standout">HTML5, CSS, SASS, JavaScript and AngularJS on Linux</span>. I
+          also know a thing or two about how to Git things done.</p>
+          <span id="user">guest@portfolio:~$</span>
+          <span id="prompt">_</span>
+        </div> <!--/.terminal content-->
+      </div> <!--/#terminal-wrapper-->
+    </div> <!--/#about-->
+    <div id="credits">
+      <p class="text-center">Built by Joshua Taylor under the influence of <i class="fa fa-coffee fa-1x"></i></p>
+    </div>
+    </div> <!--/.container-->
+  </body>
   </body>
 </html>
