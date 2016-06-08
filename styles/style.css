@@ -61,10 +61,12 @@ a:hover {
 
 #terminal-wrapper {
   padding: 20px;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 2em;
   font-family: monospace; }
+  #terminal-wrapper .terminal-content {
+    font-size: 1em; }
 
 #user {
   color: #b58900;

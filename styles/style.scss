@@ -1,4 +1,4 @@
-//////////Vendor Prefix Gen Mixin///////////////
+// Generate vendor prefixes
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
   @if $vendors {
     @each $vendor in $vendors {
@@ -7,8 +7,7 @@
   }
   #{$property}: #{$value};
 }
-
-///////////Solarized Coloring and associated mixins//////////////
+// Solarized Colors & assco. mixiins
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -47,7 +46,7 @@ html * {
 color-profile: sRGB;
 rendering-intent: auto;
 }
-//////////////End Mixins//////////////
+// End Mixins
 
 html, body, .navbar, .nav, .container{
   @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
@@ -78,10 +77,14 @@ a:hover{text-decoration: none;}
 
 #terminal-wrapper{
   padding: 20px;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-top: 2em;
   font-family: monospace;
+
+  .terminal-content{
+    font-size: 1em;
+  }
 }
 
 #user{
