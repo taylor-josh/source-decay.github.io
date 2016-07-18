@@ -1,4 +1,3 @@
-// Generate vendor prefixes
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
   @if $vendors {
     @each $vendor in $vendors {
@@ -39,8 +38,8 @@ h1,h2,h3,h4,h5,h6 {color:$accent}
 }
 
 /* light is default mode, so pair with general html definition */
-html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)};
+.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)};
 
 html * {
 color-profile: sRGB;
@@ -52,6 +51,12 @@ html, body, .navbar, .nav, .container{
   @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
   //@include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03);
   @include accentize($red);
+}
+
+.thumbnail{
+  padding: 10px;
+  max-height: 365px;
+
 }
 
 .icon-bar{background-color: $red;}

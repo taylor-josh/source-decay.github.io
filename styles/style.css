@@ -40,6 +40,10 @@ html, body, .navbar, .nav, .container {
   html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6, .navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5, .navbar h6, .nav h1, .nav h2, .nav h3, .nav h4, .nav h5, .nav h6, .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
     color: #dc322f; }
 
+.thumbnail {
+  padding: 10px;
+  max-height: 365px; }
+
 .icon-bar {
   background-color: #dc322f; }
 
