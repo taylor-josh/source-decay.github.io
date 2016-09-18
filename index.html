@@ -1,14 +1,10 @@
 <!--
 @todo:
-1.  Build out contact area
 2.  Skills section
 3.  Favicon
-4.  Picture for projects
 5.  Links to projects
 
 @consider:
-1.  Moving social/contact icons to nav bar?
-2.  Remove collapsable nav and just keep links at top?
  -->
 
 <!DOCTYPE HTML>
@@ -19,158 +15,120 @@
    <title>Josh Taylor - Web Developer</title>
 
    <!-- Stylesheets -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-   <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles/css/style.css">
 
    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav text-center">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-      <!-- <img class="center-block img-responsive" src="img/headshot.jpeg"></img> -->
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+    </ul>
 
-      <!-- About -->
-      <div class="container">
-        <div class="row">
-          <div class="terminal-wrapper col-md-4 hidden-xs hidden-sm">
-            <div class="terminal-content">
-              <span class="user">guest@portfolio:~$</span>
-              <span class="command">whoami joshtaylor</span>
-              <div class="prompt"> </div>
-            </div>
+    <!-- About -->
+    <div class="container">
+      <img src="img/me.jpeg" class="img-circle m-x-auto d-block" alt="Josh Taylor">
+      <div id="contact">
+        <span id="social">
+          <a href="mailto:jtaylor9110@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="https://linkedin.com/in/joshrtaylor"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a href="https://github.com/source-decay"><i class="fa fa-github fa-2x"></i></a>
+          <a href="https://freecodecamp.com/source-decay"><i class="fa fa-fire fa-2x"></i></a>
+          <a href="https://codepen.io/source-decay"><i class="fa fa-pencil fa-2x"></i></a>
+        </span>
+      </div>
+
+      <div class="row">
+        <div class="terminal-wrapper col-md-4 hidden-sm-down">
+          <div class="terminal-content">
+            <span class="user">guest@portfolio:~$</span>
+            <span class="command">whoami joshtaylor</span>
           </div>
-          <div class="terminal-output col-md-8">
-            <a id="about" class="anchor"></a>
+        </div>
+        <div class="terminal-output col-md-8">
+          <a id="about" class="anchor"></a>
+          <p>
+            Who's Josh? Well, I'm glad you asked.
+
+            <stong>I'm a Web Developer based out of New Castle, PA.</stong>
+            After a fateful run-in with code when I was a boy, I've been glued to the computer ever since.
+            I always enjoy a good challenge, especially when I can pick up a new skill in the process.
+            I use a lot of JS at home and C# / .NET professionally.
+          </p>
+        </div>
+      </div>
+      <hr></hr>
+
+      <!-- Work / Projects -->
+      <div class="row">
+        <div class="terminal-wrapper col-md-4 hidden-sm-down">
+          <div class="terminal-content">
+            <span class="user">guest@portfolio:~$</span>
+            <span class="command">ls projects/</span>
+            <ul id="nav">
+              <li><a href="#calc">Calcultron-3200</a></li>
+              <li><a href="#weat">ModernOpenWeather</a></li>
+              <li><a href="#weat">Decluttered_Wikipedia</a></li>
+              <li><a href="#tweet">RandomTweet</a></li>
+            </ul>
+            <span class="user">guest@portfolio:~$</span>
+            <div class="prompt"> </div>
+          </div>
+        </div>
+        <div class="terminal-output col-md-8">
+          <a id="work" class="anchor"></a>
+          <a id="calc" class="anchor"></a>
+
+          <div class="output">
+            <h4><a href="https://codepen.io/source-decay/full/dpoyOz/">Calcutron-3200</a></h4>
             <p>
-              You may be asking yourself who this guy is? Well, I'm glad you asked. My name is Josh and I'm a Front End Web Developer based
-              out of New Castle, PA. After a fateful run-in with code when I was a boy, I've been glued to the computer ever since.
-              I always enjoy a good challenge, especially when I can pick up a new skill in the process. I use a lot of JS at home and C# / .NET
-              professionally.
+              A simple calculator built for FreeCodeCamp Advanced Front-End Development Project. Uses jQuery and SCSS.
+              Can accept as many arguments as user enters.
+              Has error checking for if user tries to enter multiple operands in a row.
+              <img src="img/calc.png" class="img-fluid img-rounded" alt="The Amazing Calcutron 3200">
+            </p>
+          </div>
+          <hr></hr>
+
+          <a id="weat" class="anchor"></a>
+          <div class="output">
+            <h4><a href="http://github.com/source-decay/ModernOpenWeather">ModernOpenWeather</a></h4>
+            <p>
+              Web application which interacts with the OpenWeather JSON API to grab current weather conditions and display them.
+              Depending upon the weather conditions returned via the JSON response, the background of the page changes appropriately.
+              <img src="img/wthr.png" class="img-fluid img-rounded" alt="Modern Open Weather">
+            </p>
+          </div>
+          <hr></hr>
+
+          <a id="wiki" class="anchor"></a>
+          <div class="output">
+            <h4><a href="https://codepen.io/source-decay/full/pbWxEB/">Decluttered Wikipedia</a></h4>
+            <p>
+              A stylish, modern take on your Wikipedia searches. Or, if you're feeling lucky, hit Random and see where you end up.
+              <img src="img/wiki.png" class="img-fluid img-rounded" alt="Decluttered Wikipedia">
+            </p>
+          </div>
+          <hr></hr>
+
+          <a id="tweet" class="anchor"></a>
+          <div class="output">
+            <h4><a href="http://codepen.io/source-decay/details/WxNVNm/">Random Quote Generator</a></h4>
+            <p>
+              Generate words that a famous person said at some point and then tweet them to all your friends.
+              <img src="img/quote.png" class="img-fluid img-rounded" alt="Random Quote Generator">
             </p>
           </div>
         </div>
-        <hr></hr>
-
-        <!-- Work / Projects -->
-        <div class="row">
-          <div class="terminal-wrapper col-md-4 hidden-xs hidden-sm">
-            <div class="terminal-content">
-              <span class="user">guest@portfolio:~$</span>
-              <span class="command">ls projects/</span>
-              <ul id="nav">
-                <li><a href="#calc">Calcultron-3200</a></li>
-                <li><a href="#weat">ModernOpenWeather</a></li>
-                <li><a href="#weat">Decluttered_Wikipedia</a></li>
-                <li><a href="#tweet">RandomTweet</a></li>
-              </ul>
-              <span class="user">guest@portfolio:~$</span>
-              <div class="prompt"> </div>
-            </div>
-          </div>
-          <div class="terminal-output col-md-8">
-            <a id="work" class="anchor"></a>
-            <a id="calc" class="anchor"></a>
-            <h4>Calcutron-3200</h4>
-            <p>
-              A simple calculator built for FreeCodeCamp Advanced Front-End Development Project. Uses jQuery and SCSS.
-              Can accept as many arguments as user enters.
-              Has error checking for if user tries to enter multiple operands in a row.
-            </p>
-            <hr></hr>
-            <a id="weat" class="anchor"></a>
-            <h4>ModernOpenWeather</h4>
-            <p>
-              A simple calculator built for FreeCodeCamp Advanced Front-End Development Project. Uses jQuery and SCSS.
-              Can accept as many arguments as user enters.
-              Has error checking for if user tries to enter multiple operands in a row.
-            </p>
-            <hr></hr>
-
-            <a id="wiki" class="anchor"></a>
-            <h4>Decluttered Wikipedia</h4>
-            <p>
-              A simple calculator built for FreeCodeCamp Advanced Front-End Development Project. Uses jQuery and SCSS.
-              Can accept as many arguments as user enters.
-              Has error checking for if user tries to enter multiple operands in a row.
-            </p>
-            <hr></hr>
-
-            <a id="tweet" class="anchor"></a>
-            <h4>Random Quote Generator</h4>
-            <p>
-              A simple calculator built for FreeCodeCamp Advanced Front-End Development Project. Uses jQuery and SCSS.
-              Can accept as many arguments as user enters.
-              Has error checking for if user tries to enter multiple operands in a row.
-            </p>
-          </div>
-        </div>
       </div>
-    <!-- <div id="work">
-      <h2 class="text-center">I've made applications that let you:</h2>
-      <div class="container">
-        <div class="row center-block">
-          <div class="col-xs-6 col-md-4">
-            <div class="thumbnail">
-              <a href="https://github.com/source-decay/Tuh-Done">
-                <img class="img-responsive" src="img/tuhdone.png"></img></a>
-              <div class="caption text-center">Track tasks in Angular.js</div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="thumbnail">
-              <a href="https://github.com/source-decay/ModernOpenWeather">
-                <img class="img-responsive" src="img/mopenweather.png"></img></a>
-              <div class="caption text-center">Check the weather anywhere</div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="thumbnail">
-            <a href="http://codepen.io/source-decay/details/pbWxEB/">
-              <img class="img-responsive" src="img/wikiviewer.png"></img></a>
-              <div class="caption text-center">Search for knowledge</div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <div class="thumbnail">
-              <img class="img-responsive" src="img/quoter.png"></img>
-              <div class="caption text-center">Quickly tweet things famous people said</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div id="contact">
-      <span id="social">
-        <!-- <a href="mailto:jtaylor9110@gmail.com"><i class="fa fa-envelope fa-2x"></i></a> -->
-        <a href="https://github.com/source-decay"><i class="fa fa-github fa-2x"></i></a>
-        <!-- <a href="https://linkedin.com/in/joshrtaylor"><i class="fa fa-linkedin-square fa-2x"></i></a> -->
-        <a href="https://freecodecamp.com/source-decay"><i class="fa fa-fire fa-2x"></i></a>
-        <a href="https://codepen.io/source-decay"><i class="fa fa-pencil fa-2x"></i></a>
-      </span>
     </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
-#This is my personal landing page built on Github pages!
+##This is my personal website hosted on Github.
 
-##Written via plain old HTML5 and SASS (with some choice mixins)
+From time to time, the layout here may change and new projects may be displayed.
+
+In the future, a blog may sprout off of this but who knows ¯\\\_(ツ)_/¯

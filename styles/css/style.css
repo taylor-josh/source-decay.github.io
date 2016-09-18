@@ -7,7 +7,7 @@ body {
   line-height: 2;
   margin: 20px auto;
   font-size: 14px;
-  padding: 0; }
+  padding: 10px; }
 
 hr {
   height: 1px;
@@ -29,21 +29,21 @@ a:hover {
 h1, h2, h3, h4 {
   font-weight: 700; }
 
+img {
+  max-height: 250px;
+  margin: 20px 0px;
+  border: 1px solid #AAAAAA; }
+
 /*-----------------------------------------------
 |       Styles for built-in HTML Elements
 -----------------------------------------------*/
-.icon-bar {
-  background-color: #0074D9; }
-
 .nav {
-  font-size: 1.4em; }
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none; }
-
-.navbar .navbar-collapse {
+  font-size: 1.4em;
   text-align: center; }
+  .nav li {
+    margin: 0px 10px 30px 10px;
+    display: inline-block;
+    float: none; }
 
 .terminal-wrapper {
   font-family: monospace;
@@ -64,7 +64,10 @@ h1, h2, h3, h4 {
   width: 6px;
   display: inline-block;
   background: #0074D9;
+  -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite; }
 
 @keyframes blink {
@@ -79,7 +82,8 @@ h1, h2, h3, h4 {
     background: #0074D9; } }
 #social {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 50px; }
   #social a {
     padding: 1em; }
 
