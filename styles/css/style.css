@@ -1,5 +1,5 @@
 /*-----------------------------------------------
-|       Styles for built-in HTML Elements
+|       Styles for built-in HTML Elements       |
 -----------------------------------------------*/
 body {
   font-family: 'Droid Sans', sans-serif;
@@ -30,12 +30,13 @@ h1, h2, h3, h4 {
   font-weight: 700; }
 
 img {
+  max-width: 250px;
   max-height: 250px;
-  margin: 20px 0px;
+  margin: 0px 0px 20px 0px;
   border: 1px solid #AAAAAA; }
 
 /*-----------------------------------------------
-|       Styles for built-in HTML Elements
+|       Styles for built-in HTML Elements       |
 -----------------------------------------------*/
 .nav {
   font-size: 1.4em;
