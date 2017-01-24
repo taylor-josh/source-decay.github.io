@@ -14,12 +14,12 @@
    <title>Josh Taylor - Web Developer</title>
 
    <!-- Stylesheets -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"> -->
    <link rel="stylesheet" href="styles/css/style.css">
 
    <!-- Scripts -->
-   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+   <!-- <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script> -->
 
    <!-- Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
@@ -30,13 +30,17 @@
       <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-      <!-- <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li> -->
     </ul>
 
-    <!-- About -->
     <div class="container">
-      <img src="img/me.jpeg" class="img-circle m-x-auto d-block" alt="Josh Taylor">
-      <div id="contact">
+      <div class="row">
+				<div class="lead">
+					<h2>Hi, I'm Josh.</h2>
+					<h2>I develop websites and write code for a living.</h2>
+				</div>
+      </div>
+
+      <div class="" id="contact">
         <span id="social">
           <a href="mailto:jtaylor9110@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
           <a href="https://linkedin.com/in/joshrtaylor"><i class="fa fa-linkedin-square fa-2x"></i></a>
@@ -46,92 +50,6 @@
         </span>
       </div>
 
-      <div class="row">
-        <div class="terminal-wrapper col-md-4 hidden-sm-down">
-          <div class="terminal-content">
-            <span class="user">guest@portfolio:~$</span>
-            <span class="command">whoami joshtaylor</span>
-          </div>
-        </div>
-        <div class="terminal-output col-md-8">
-          <a id="about" class="anchor"></a>
-          <p>
-            Who's Josh? Well, I'm glad you asked.<br>
-
-            <stong>I'm a Web Developer based out of New Castle, PA.</stong>
-            After a fateful run-in with code when I was a boy, I've been glued to the computer ever since.
-            I always enjoy a good challenge, especially when I can pick up a new skill in the process.
-            My personal projects involve lots of JS (in some form or another) and SCSS. I am working towards
-            becoming a full stack developer in my free time (when I have any).<br>
-            At work, I use a lot of AngularJS, C#, .NET MVC and SQL.
-          </p>
-        </div>
-      </div>
-      <hr></hr>
-
-      <!-- Work / Projects -->
-      <div class="row">
-        <div class="terminal-wrapper col-md-4 hidden-sm-down">
-          <div class="terminal-content">
-            <span class="user">guest@portfolio:~$</span>
-            <span class="command">ls projects/</span>
-            <ul id="nav">
-              <li><a href="#calc">Calcultron-3200</a></li>
-              <li><a href="#weat">ModernOpenWeather</a></li>
-              <li><a href="#wiki">Decluttered_Wikipedia</a></li>
-              <li><a href="#tweet">RandomTweet</a></li>
-            </ul>
-            <span class="user">guest@portfolio:~$</span>
-            <div class="prompt"> </div>
-          </div>
-        </div>
-        <div class="terminal-output col-md-8">
-          <a id="work" class="anchor"></a>
-          <a id="calc" class="anchor"></a>
-
-          <div class="output col-md-12">
-            <h4><a href="https://codepen.io/source-decay/full/dpoyOz/">Calcutron-3200</a></h4>
-            <p class="col-md-8">
-              A clean, minimal calculator built for FreeCodeCamp Advanced Front-End Development Project using VanillaJS and SCSS.
-              Can accept as many arguments as user enters.
-              Has error checking for if user tries to enter multiple operands in a row.
-            </p>
-            <img src="img/calc.png" class="img-fluid img-rounded col-md-4" alt="The Amazing Calcutron 3200">
-          </div>
-          <!-- <hr></hr> -->
-
-          <a id="weat" class="anchor"></a>
-          <div class="output col-md-12">
-            <h4><a href="http://github.com/source-decay/ModernOpenWeather">ModernOpenWeather</a></h4>
-            <p class="col-md-8">
-              Web application which interacts with the OpenWeather JSON API to grab current weather conditions and display them.
-              Depending upon the weather conditions returned via the JSON response, the background of the page changes appropriately.
-            </p>
-            <img src="img/wthr.png" class="img-fluid img-rounded col-md-4" alt="Modern Open Weather">
-          </div>
-          <!-- <hr></hr> -->
-
-          <a id="wiki" class="anchor"></a>
-          <div class="output col-md-12">
-            <h4><a href="https://codepen.io/source-decay/full/pbWxEB/">Decluttered Wikipedia</a></h4>
-            <p class="col-md-8">
-              A stylish, modern take on your Wikipedia searches. Or, if you're feeling lucky, hit Random and see where you end up.
-            </p>
-            <img src="img/wiki.png" class="img-fluid img-rounded col-md-4" alt="Decluttered Wikipedia">
-          </div>
-          <!-- <hr></hr> -->
-
-          <a id="tweet" class="anchor"></a>
-          <div class="output col-md-12">
-            <h4><a href="http://codepen.io/source-decay/details/WxNVNm/">Random Quote Generator</a></h4>
-            <p class="col-md-8">
-              Generate words that a famous person said at some point and then tweet them to all your friends.
-            </p>
-            <img src="img/quote.png" class="img-fluid img-rounded col-md-4" alt="Random Quote Generator">
-
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
