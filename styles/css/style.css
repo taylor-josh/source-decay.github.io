@@ -15,9 +15,12 @@ h1, h2, h3, h4 {
   font-weight: 700; }
 
 .lead {
-  padding: 6rem 0 5rem; }
+  padding: 5rem 0 5rem; }
+
+.bio {
+  margin-left: 1rem; }
 
 #social a {
-  margin: 4px; }
+  margin: .5rem; }
 
 /*# sourceMappingURL=style.css.map */
