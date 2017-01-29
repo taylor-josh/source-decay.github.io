@@ -1,6 +1,5 @@
 <!--
 @todo:
-3.  Favicon
 
 @consider:
 1. Contact form in place of email icon
@@ -14,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,
       initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Josh Taylor - Web Developer</title>
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/Skeleton-2.0.4/css/normalize.css">
@@ -52,9 +53,10 @@
       </div>
     </div>
 
-    <div>
+    <div class="holder">
       <!-- Hidden checkbox using label CSS hack to show/hide modal without JS -->
       <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick" checked>
+      <!-- Overlay for dimming of background when modal is displayed -->
       <div class="overlay"></div>
 
       <!-- Hidden modal -->
@@ -65,7 +67,6 @@
           <input type="text" name="name" placeholder="Your name"><br>
           <input type="email" name="email" placeholder="Your email"><br>
         </div>
-
         <div class="modal-section modal-section-right">
           <textarea style="resize: none" name="message"
             placeholder="Your message"></textarea><br>
@@ -73,6 +74,7 @@
           <label class="button" for="modal-closing-trick">Close</label>
         </div>
       </div>
+
     </div>
 
   </body>
