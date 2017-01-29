@@ -11,22 +11,24 @@
 }
 
 .modal {
+  line-height: 1.2;
+
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 
   background-color: #EEEEEE;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 
   min-width: 300px;
   min-height: 200px;
   padding: 20px 8px 20px 8px;
-
-  z-index: 100;
-  position: fixed;
-  line-height: 1.2;
   border-radius: 4px;
-  overflow: hidden;
 
   .modal-title {
     text-align: center;
@@ -56,6 +58,10 @@
   }
 }
 
+// Tilde operator in CSS selects all DOM siblings that share the same parent as
+// the checkbox when it is checked. They do not need to be adjacent siblings.
+// In this case, any divs that share the same parent DOM node with the checkbox
+// ("holder") at the time that it is checked will be selected
 input.modal-closing-trick:checked ~ div { display: none !important; }
 
 #modal-closing-trick { display: none; }
