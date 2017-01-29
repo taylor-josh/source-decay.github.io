@@ -33,9 +33,9 @@ html, body {
 
 body {
   font-family: 'Droid Sans', sans-serif;
+  background-color: #EEEEEE;
   line-height: 2;
   font-size: 14px;
-  background-color: #EEEEEE;
 }
 
 h1,h2,h3,h4 { font-weight: 700; }
@@ -49,7 +49,7 @@ a {
 }
 
 // Custom Selectors
-.lead { padding: 5rem 0 5rem; }
+.lead { padding: 5rem 0 2rem; }
 
 .bio { margin-left: .5rem; }
 
