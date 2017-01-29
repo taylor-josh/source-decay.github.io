@@ -1,30 +1,117 @@
-// Colors
-$red: #FF4136;
-$blk: #111111;
-$org: #FF851B;
-$gry: #AAAAAA;
-$bck: #EEEEEE;
-$blu: #0074D9;
-$sil: #DDDDDD;
-$wht: #FFFFFF;
+// Smaller than phablet
+@media (max-width: 549px) {
+  .social {
+    float: none;
+  }
+  .modal {
+    margin-left: 0%;
+    height: 100%;
+    border: none;
+    width: 92%;
+    top: 0;
+  }
+}
+
+// Larger than phablet
+@media (min-width: 550px) {
+  .modal {
+    margin-left: 25%;
+    border: 1px solid black;
+    top: 50px;
+    width: 50%;
+  }
+}
+
+
+// Base HTML Seclectors
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 body {
   font-family: 'Droid Sans', sans-serif;
-  background-color: $bck;
   line-height: 2;
   font-size: 14px;
-  padding: 10px; }
+  background-color: #EEEEEE;
+}
+
+h1,h2,h3,h4 { font-weight: 700; }
 
 a {
   color: inherit;
   text-decoration: none;
+  margin: .5rem;
 
-  :hover { text-decoration: none; } }
+  :hover { text-decoration: none; }
+}
 
-h1,h2,h3,h4 { font-weight: 700; }
 
+// Custom Selectors
 .lead { padding: 5rem 0 5rem; }
 
-.bio { margin-left: 1rem; }
+.bio { margin-left: .5rem; }
 
-#social a { margin: .5rem; }
+.social { float: right; }
+
+// Custom Selectors - Modal Specific
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  background-attachment: scroll;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background-color: #EEEEEE;
+
+  min-width: 300px;
+  min-height: 200px;
+  padding: 20px 8px 20px 8px;
+
+  z-index: 100;
+  position: fixed;
+  line-height: 1.2;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .modal-title {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.modal-section { margin: 4px; }
+
+.modal-section-left {
+  flex-grow: 1;
+
+  input { width: 100%; }
+}
+
+.modal-section-right {
+  flex-grow: 2;
+
+  .button, button {
+    float: right;
+    margin: 6px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 96px;
+  }
+}
+
+input.modal-closing-trick:checked ~ div { display: none !important; }
+
+#modal-closing-trick { display: none; }
