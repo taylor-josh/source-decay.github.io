@@ -14,22 +14,25 @@ $red: #ff3860;
     margin: 0.5em; /* opposite of fukol-grid margin */
   }
 }
-
-// Media query - Smaller than phablet
-@media (max-width: 549px) {
+// Mobile phone
+@media (min-width: 400px) {
   .modal-content {
     margin: 0;
-    border: none;
-    top: 0;
+    width: 100%
   }
 }
 
-// Media query - Larger than phablet
-@media (min-width: 550px) {
+// Tablet
+@media (min-width: 750px) {
   .modal-content {
     margin-left: 25%;
-    border: 1px solid black;
-    top: 50px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .modal-content {
+    margin-left: 25%;
     width: 50%;
   }
 }
