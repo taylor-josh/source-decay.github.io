@@ -9,8 +9,8 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/css/normalize.css">
-    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/style.css">
 
     <!-- Fonts -->
     <!-- <link rel="stylesheet"
@@ -19,19 +19,48 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="lead">
-      <h1>Hi, I'm <span style="color: #3273dc">Josh</span></h1>
-      <h2>I write code for a living.</h2>
-    </div>
 
-    <p class="bio">When I'm not at work making awesome stuff
-      with Angular and C#, you can find me either reading or teaching myself
-      something new and exciting, like VueJS. I am known to come up with some
-      interesting solutions to problems (like how my contact modal uses
-      <span style="color: #3273dc">zero</span> Javascript).
-      <br><br>
-      <a href="#modal-one"><input type="button" value="Contact Me"></a>
-    </p>
+    <section class="bio">
+      <h2>My name is <span style="color: #3273dc">Josh</span> and I write code for a living.</h2>
+      <p class="">
+        I'm a <strong>full-stack</strong> application developer.
+        <br>
+        I am passionate about web development, digital rights and promoting a free and open web.
+        <br>
+        I love challenging work that tests my abilites and allows me to learn something new.
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+        <p>I love front-end development and would consider that where I am most comfortable
+        although I have been working to round out my back-end and database skills as well.</p>
+
+        <ul>
+          <li>
+            <span class="star"> * </span>
+            <b>Front-end</b> Javascript (ES6), Vue.js, AngularJS1, jQuery, SASS, HTML5, CSS
+          </li>
+          <li>
+            <span class="star"> * </span>
+            <b>Back-end</b> Python, C#, SQL
+          </li>
+          <li>
+            <span class="star"> * </span>
+            <b>Tools</b> Git, Gulp
+          </li>
+        </ul>
+    </section>
+
+    <section class="exp">
+      <h2>Experience.</h2>
+        <ul>
+          <li>
+            <span class="star"> * </span>
+            ( Sep 2016 - Present ) <b>Applications Developer</b> @Keypoint Government Solutions,
+            Slippery Rock, PA
+          </li>
+        </ul>
+    </section>
 
     <div class="social">
       <span>
@@ -41,33 +70,11 @@
         <a href="https://github.com/source-decay">
           <i class="fa fa-github fa-2x"></i>
         </a>
-        <a href="https://freecodecamp.com/source-decay">
-          <i class="fa fa-fire fa-2x"></i>
-        </a>
-        <a href="https://codepen.io/source-decay">
-          <i class="fa fa-pencil fa-2x"></i>
-        </a>
       </span>
     </div>
 
-    <!-- Hidden modal -->
-    <div class="modal" id="modal-one">
-      <div class="modal-content">
-        <!-- <a style="float: right; margin: 5px;" href="#">X</a> -->
-        <h2 class="modal-title">Contact me</h2>
-        <div class="fukol-grid">
-
-          <div class="modal-section">
-            <input type="text" name="name" placeholder="Your name"><br>
-            <input type="email" name="email" placeholder="Your email"><br>
-            <input type="text" name="message"placeholder="Your message"></input><br>
-            <input type="button" value="Send">
-            <a href="#"><input type="button" value="Close"></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+    <footer id="loveGithub">
+      <p>Hosted with <span><i class="fa fa-heart fa-1x"></i></span> via Github Pages.</p>
+    </footer>
   </body>
 </html>
